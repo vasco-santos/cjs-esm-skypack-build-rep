@@ -53,3 +53,11 @@ const { CID } = require('multiformats')
 ```
 
 Results in exactly the same issue.
+
+### Using default exports instead of named exports in a esm module
+
+```js
+const testEsmExport = require('esm-export-test-module')
+```
+
+Results in exactly the same issue.
