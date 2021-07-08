@@ -43,3 +43,13 @@ Results on
 Uncaught TypeError: Cannot destructure property 'CID' of 'require$$0' as it is null.
     at cjs-esm-skypack-build-rep.js:2
 ```
+
+## Other Experiments
+
+### Not relying on package.json exports
+
+```js
+const { CID } = require('multiformats')
+```
+
+Results in exactly the same issue.
